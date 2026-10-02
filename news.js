@@ -1,9 +1,16 @@
+/* =========================================================
+   Junyi Guan - News
+   ========================================================= */
+
 const news = [
 
   {
     year: 2026,
+
     icon: "🎉",
-    text: 'Congratulations to Yuxuan Zhang! Our paper "Hierarchical Superpixel Segmentation by Searching Seeds" has been accepted by IEEE Transactions on Image Processing (TIP).',
+
+    text:
+      'Our paper "Hierarchical Superpixel Segmentation by Searching Seeds", led by Yuxuan Zhang, has been accepted by IEEE Transactions on Image Processing (TIP).',
 
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC",
@@ -15,15 +22,23 @@ const news = [
 ];
 
 
-const newsContainer = document.getElementById("news-list");
+/* =========================================================
+   Automatically render news
+   ========================================================= */
+
+const newsContainer =
+  document.getElementById("news-list");
 
 
 news.forEach(item => {
 
   let linksHTML = "";
 
+
   if (item.paper) {
+
     linksHTML += `
+
       <a
         href="${item.paper}"
         target="_blank"
@@ -31,11 +46,16 @@ news.forEach(item => {
       >
         [Paper]
       </a>
+
     `;
+
   }
 
+
   if (item.code) {
+
     linksHTML += `
+
       <a
         href="${item.code}"
         target="_blank"
@@ -43,11 +63,14 @@ news.forEach(item => {
       >
         [Code]
       </a>
+
     `;
+
   }
 
 
   newsContainer.innerHTML += `
+
     <div class="news-item">
 
       <span class="news-year">
@@ -58,7 +81,7 @@ news.forEach(item => {
         ${item.icon}
       </span>
 
-      <span>
+      <span class="news-text">
         ${item.text}
       </span>
 
@@ -67,6 +90,7 @@ news.forEach(item => {
       </span>
 
     </div>
+
   `;
 
 });
