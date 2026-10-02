@@ -313,28 +313,6 @@ const publications = [
   },
 
 
-  /* =======================================================
-     2017
-     ======================================================= */
-
-  {
-    year: 2017,
-
-    title:
-      "一种基于密度和网格的簇心可确定聚类算法",
-
-    authors:
-      '何熊熊，<strong>管俊轶</strong>，叶宣佐，詹亦钊',
-
-    venue:
-      "控制与决策, vol. 32, no. 5, pp. 913–919, 2017",
-
-    paper:
-      "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:SeFeTyx0c_EC",
-
-    code:
-      ""
-  },
 
 
   /* =======================================================
