@@ -15,10 +15,6 @@
 
   <style>
 
-    /* =========================================================
-       GLOBAL
-       ========================================================= */
-
     :root {
       --text: #252525;
       --muted: #666666;
@@ -63,392 +59,230 @@
       text-decoration: underline;
     }
 
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
-
     header {
-
       position: sticky;
       top: 0;
       z-index: 100;
-
       background: rgba(255,255,255,0.96);
-
       border-bottom: 1px solid var(--border);
     }
 
     .nav {
-
       max-width: 1140px;
-
       margin: 0 auto;
-
       padding: 16px 28px;
 
       display: flex;
-
       align-items: center;
-
       justify-content: space-between;
     }
 
     .nav-name {
-
       font-size: 21px;
-
       font-weight: 700;
-
       color: #222222;
     }
 
     .nav-links {
-
       display: flex;
-
       align-items: center;
-
       gap: 27px;
     }
 
     .nav-links a {
-
       color: #333333;
-
       font-size: 15px;
     }
 
-
-    /* =========================================================
-       PAGE LAYOUT
-       ========================================================= */
-
     .container {
-
       max-width: 1140px;
-
       margin: 46px auto;
-
       padding: 0 28px;
 
       display: grid;
-
       grid-template-columns: 255px minmax(0, 1fr);
-
       gap: 62px;
     }
 
-
-    /* =========================================================
-       SIDEBAR
-       ========================================================= */
-
     .sidebar {
-
       align-self: start;
-
       position: sticky;
-
       top: 95px;
     }
 
     .avatar {
-
       width: 190px;
-
       height: 190px;
-
       border-radius: 50%;
-
       object-fit: cover;
-
-      /*
-       * 你的原照片人物稍微靠中间偏上，
-       * 这个位置适合做科研主页头像。
-       */
       object-position: 50% 38%;
-
       display: block;
-
       margin-bottom: 22px;
-
       border: 1px solid #eeeeee;
     }
 
     .sidebar-name {
-
       font-size: 30px;
-
       line-height: 1.2;
-
       font-weight: 700;
-
       margin: 0 0 10px 0;
     }
 
     .position {
-
       font-size: 16px;
-
       color: #505050;
-
       margin-bottom: 4px;
     }
 
     .institution {
-
       font-size: 15px;
-
       color: var(--muted);
-
       margin-bottom: 20px;
     }
 
     .contact {
-
       font-size: 15px;
-
       color: #444444;
     }
 
     .contact div {
-
       margin-bottom: 8px;
     }
 
     .contact-label {
-
       display: inline-block;
-
       min-width: 21px;
     }
 
-
-    /* =========================================================
-       MAIN CONTENT
-       ========================================================= */
-
     main {
-
       min-width: 0;
     }
 
     section {
-
       scroll-margin-top: 85px;
     }
 
     h2 {
-
       font-size: 25px;
-
       font-weight: 600;
-
       margin-top: 42px;
-
       margin-bottom: 17px;
-
       padding-bottom: 7px;
-
       border-bottom: 1px solid var(--border);
     }
 
     main section:first-child h2 {
-
       margin-top: 0;
     }
 
     h3 {
-
       font-size: 20px;
-
       font-weight: 600;
-
       margin-top: 34px;
-
       margin-bottom: 18px;
-
       color: #333333;
     }
 
     p {
-
       margin-top: 8px;
-
       margin-bottom: 14px;
     }
 
-
-    /* =========================================================
-       RESEARCH INTERESTS
-       ========================================================= */
-
     .tag {
-
       display: inline-block;
-
       margin: 4px 5px 4px 0;
-
       padding: 5px 11px;
-
       background: var(--tag-background);
-
       border-radius: 16px;
-
       font-size: 14px;
-
       color: #444444;
     }
 
-
-    /* =========================================================
-       NEWS
-       ========================================================= */
-
     .news-item {
-
       margin-bottom: 10px;
     }
 
     .news-year {
-
       display: inline-block;
-
       min-width: 58px;
-
       font-weight: 600;
-
       color: #555555;
     }
 
-
-    /* =========================================================
-       PUBLICATIONS
-       ========================================================= */
-
     .publication {
-
       margin-bottom: 26px;
-
       padding-bottom: 2px;
     }
 
     .pub-title {
-
       margin-bottom: 2px;
-
       font-size: 16.5px;
-
       line-height: 1.55;
-
       font-weight: 600;
     }
 
     .pub-title a {
-
       color: #222222;
     }
 
     .pub-title a:hover {
-
       color: var(--link);
     }
 
     .authors {
-
       color: #333333;
-
       line-height: 1.55;
     }
 
     .venue {
-
       margin-top: 2px;
-
       color: #555555;
-
       font-style: italic;
     }
 
     .pub-links {
-
       margin-top: 4px;
     }
 
     .pub-links a {
-
       margin-right: 11px;
-
       font-size: 14px;
-
       font-weight: 600;
     }
 
     .publication-note {
-
       color: #777777;
-
       font-size: 14px;
-
       margin-bottom: 24px;
     }
 
-    .scholar-link {
-
-      margin-top: 35px;
-    }
-
-
-    /* =========================================================
-       FOOTER
-       ========================================================= */
-
     footer {
-
       max-width: 1140px;
-
       margin: 55px auto 0;
-
       padding: 25px 28px 35px;
-
       border-top: 1px solid var(--border);
-
       color: #888888;
-
       font-size: 14px;
     }
-
-
-    /* =========================================================
-       RESPONSIVE
-       ========================================================= */
 
     @media (max-width: 800px) {
 
       .container {
-
         grid-template-columns: 1fr;
-
         gap: 28px;
-
         margin-top: 30px;
       }
 
       .sidebar {
-
         position: static;
       }
 
       .avatar {
-
         width: 150px;
-
         height: 150px;
       }
 
       .nav-links {
-
         display: none;
       }
 
@@ -459,13 +293,8 @@
 </head>
 
 
-
 <body>
 
-
-<!-- =========================================================
-     HEADER
-     ========================================================= -->
 
 <header>
 
@@ -474,7 +303,6 @@
     <div class="nav-name">
       Junyi Guan
     </div>
-
 
     <div class="nav-links">
 
@@ -506,25 +334,11 @@
 
 
 
-<!-- =========================================================
-     MAIN LAYOUT
-     ========================================================= -->
-
 <div class="container">
 
 
-  <!-- =======================================================
-       SIDEBAR
-       ======================================================= -->
-
   <aside class="sidebar">
 
-
-    <!--
-      请确保你的 GitHub 仓库根目录里有：
-
-      profile.png
-    -->
 
     <img
       src="profile.png"
@@ -607,25 +421,15 @@
 
 
 
-  <!-- =======================================================
-       MAIN
-       ======================================================= -->
-
   <main>
 
 
 
-    <!-- =====================================================
-         ABOUT
-         ===================================================== -->
-
     <section id="about">
-
 
       <h2>
         About Me
       </h2>
-
 
       <p>
 
@@ -633,7 +437,6 @@
         Science and Technology, Hangzhou Normal University.
 
       </p>
-
 
       <p>
 
@@ -646,123 +449,74 @@
 
       </p>
 
-
     </section>
 
 
 
-    <!-- =====================================================
-         RESEARCH
-         ===================================================== -->
-
     <section id="research">
-
 
       <h2>
         Research Interests
       </h2>
 
-
       <span class="tag">
         Clustering
       </span>
-
 
       <span class="tag">
         Unsupervised Learning
       </span>
 
-
       <span class="tag">
         Data Mining
       </span>
-
 
       <span class="tag">
         Pattern Recognition
       </span>
 
-
       <span class="tag">
         Density-Based Clustering
       </span>
-
 
       <span class="tag">
         Multi-Peak Clustering
       </span>
 
-
       <span class="tag">
         Graph-Based Clustering
       </span>
-
 
       <span class="tag">
         Hierarchical Clustering
       </span>
 
-
       <span class="tag">
         Superpixel Segmentation
       </span>
-
 
     </section>
 
 
 
-    <!-- =====================================================
-         NEWS
-         ===================================================== -->
-
     <section id="news">
-
 
       <h2>
         News
       </h2>
 
-
-      <div class="news-item">
-
-        <span class="news-year">
-          2026
-        </span>
-
-        Our work on hierarchical superpixel segmentation
-        was published in IEEE Transactions on Image Processing.
-
-      </div>
-
-
-      <div class="news-item">
-
-        <span class="news-year">
-          2026
-        </span>
-
-        New research on parallel hierarchical clustering
-        and multi-view learning is in progress.
-
-      </div>
-
+      <!-- news.js 会自动把内容插入这里 -->
+      <div id="news-list"></div>
 
     </section>
 
 
 
-    <!-- =====================================================
-         PUBLICATIONS
-         ===================================================== -->
-
     <section id="publications">
-
 
       <h2>
         Publications
       </h2>
-
 
       <div class="publication-note">
 
@@ -772,1141 +526,18 @@
 
       </div>
 
-
-
-      <!-- ===================================================
-           2026
-           =================================================== -->
-
-      <h3>
-        2026
-      </h3>
-
-
-
-      <!-- TIP -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC"
-            target="_blank"
-          >
-
-            Hierarchical Superpixel Segmentation by Searching Seeds
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          Y. Zhang,
-
-          <strong>J. Guan*</strong>,
-
-          X. Ji,
-
-          Y. Zhao,
-
-          X. He,
-
-          and S. Li
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Transactions on Image Processing,
-          35, 9773–9788, 2026.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-
-          <a
-            href="https://github.com/LissLeto/HSSS"
-            target="_blank"
-          >
-            [Code]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- PR Multi-view Feature Selection -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u_35RYKgDlwC"
-            target="_blank"
-          >
-
-            Multi-view Feature Selection Method with Adaptive Projection
-            Subspace Fusion
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          J. Liu,
-
-          C. Zhang,
-
-          T. Zhou,
-
-          Y. Liu,
-
-          R. Sheikhpour,
-
-          Y. Wang,
-
-          <strong>J. Guan</strong>,
-
-          J. Chen,
-
-          et al.
-
-        </div>
-
-
-        <div class="venue">
-
-          Pattern Recognition,
-          114467, 2026.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u_35RYKgDlwC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           2025
-           =================================================== -->
-
-      <h3>
-        2025
-      </h3>
-
-
-
-      <!-- PeakPadding -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://doi.org/10.1109/TNNLS.2025.3606527"
-            target="_blank"
-          >
-
-            Peak-Padding: Clustering by Padding Density Peaks
-            with the Minimum Padding Cost
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          B. Jiang,
-
-          W. Sheng*,
-
-          Y. Zhao,
-
-          S. Li,
-
-          and X. He
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Transactions on Neural Networks and Learning Systems.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://doi.org/10.1109/TNNLS.2025.3606527"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- AAAI IMVC -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:YFjsv_pBGBYC"
-            target="_blank"
-          >
-
-            Collaborative Similarity Fusion and Consistency Recovery
-            for Incomplete Multi-View Clustering
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          B. Jiang,
-
-          C. Zhang,
-
-          X. Liang,
-
-          P. Zhou,
-
-          J. Yang,
-
-          X. Wu,
-
-          <strong>J. Guan</strong>,
-
-          W. Ding,
-
-          et al.
-
-        </div>
-
-
-        <div class="venue">
-
-          Proceedings of the AAAI Conference on Artificial Intelligence,
-          39(17), 17617–17625, 2025.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:YFjsv_pBGBYC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- AAAI EDPC -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:BqipwSGYUEgC"
-            target="_blank"
-          >
-
-            Enhanced Density Peak Clustering for High-Dimensional Data
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          Z. Wang,
-
-          J. Yang,
-
-          <strong>J. Guan</strong>,
-
-          C. Zhang,
-
-          X. Liang,
-
-          B. Jiang,
-
-          and W. Sheng
-
-        </div>
-
-
-        <div class="venue">
-
-          Proceedings of the AAAI Conference on Artificial Intelligence,
-          39(20), 21411–21419, 2025.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:BqipwSGYUEgC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- Radial Search -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:J_g5lzvAfSwC"
-            target="_blank"
-          >
-
-            Radial Search-Based Graph Clustering Method
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          Y. Zhao,
-
-          F. Zhu,
-
-          <strong>J. Guan</strong>,
-
-          X. He,
-
-          and S. Li
-
-        </div>
-
-
-        <div class="venue">
-
-          Neurocomputing,
-          131421, 2025.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:J_g5lzvAfSwC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           2024
-           =================================================== -->
-
-      <h3>
-        2024
-      </h3>
-
-
-
-      <!-- R-MDPC -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:hFOr9nPyWt4C"
-            target="_blank"
-          >
-
-            Fast Main Density Peak Clustering within Relevant Regions
-            via a Robust Decision Graph
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          J. Zhu,
-
-          X. He,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          Pattern Recognition,
-          152, 110458, 2024.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:hFOr9nPyWt4C"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- Y-Graph -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:iH-uZ7U-co4C"
-            target="_blank"
-          >
-
-            Y-Graph: A Max-Ascent-Angle Graph for Detecting Clusters
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li,
-
-          X. He,
-
-          J. Chen,
-
-          Y. Zhao,
-
-          and Y. Zhang
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Transactions on Knowledge and Data Engineering,
-          37(1), 542–556.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:iH-uZ7U-co4C"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           2023
-           =================================================== -->
-
-      <h3>
-        2023
-      </h3>
-
-
-
-      <!-- DEMOS -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:MXK_kJrjxJIC"
-            target="_blank"
-          >
-
-            DEMOS: Clustering by Pruning a Density-Boosting
-            Cluster Tree of Density Mounts
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          X. Chen,
-
-          X. He,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Transactions on Knowledge and Data Engineering,
-          35(10), 10814–10830, 2023.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:MXK_kJrjxJIC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- MDPC+ -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UebtZRa9Y70C"
-            target="_blank"
-          >
-
-            Clustering by Fast Detection of Main Density Peaks
-            within a Peak Digraph
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          X. He,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          Information Sciences,
-          628, 504–521, 2023.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UebtZRa9Y70C"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- SMMP -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UeHWp8X0CEIC"
-            target="_blank"
-          >
-
-            SMMP: A Stable-Membership-Based Auto-Tuning
-            Multi-Peak Clustering Algorithm
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          X. He,
-
-          J. Zhu,
-
-          J. Chen,
-
-          and P. Si
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Transactions on Pattern Analysis and Machine Intelligence,
-          45(5), 6307–6319, 2023.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UeHWp8X0CEIC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           2021
-           =================================================== -->
-
-      <h3>
-        2021
-      </h3>
-
-
-
-      <!-- Association degree -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u5HHmVD_uO8C"
-            target="_blank"
-          >
-
-            Fast Hierarchical Clustering of Local Density Peaks
-            via an Association Degree Transfer Method
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          X. He,
-
-          J. Zhu,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          Neurocomputing,
-          455, 401–418, 2021.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u5HHmVD_uO8C"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- SPL -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u-x6o8ySG0sC"
-            target="_blank"
-          >
-
-            Peak-Graph-Based Fast Density Peak Clustering
-            for Image Segmentation
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          S. Li*,
-
-          X. He,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          IEEE Signal Processing Letters,
-          28, 897–901, 2021.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u-x6o8ySG0sC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- PAA -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:r0BpntZqJG4C"
-            target="_blank"
-          >
-
-            A Novel Clustering Algorithm by Adaptively Merging
-            Sub-Clusters Based on the Normal-Neighbor and Merging Force
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          L. Sheng,
-
-          X. He,
-
-          and J. Chen
-
-        </div>
-
-
-        <div class="venue">
-
-          Pattern Analysis and Applications,
-          24(3), 1231–1248, 2021.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:r0BpntZqJG4C"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           2017
-           =================================================== -->
-
-      <h3>
-        2017
-      </h3>
-
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:SeFeTyx0c_EC"
-            target="_blank"
-          >
-
-            一种基于密度和网格的簇心可确定聚类算法
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          何熊熊，
-
-          <strong>管俊轶</strong>，
-
-          叶宣佐，
-
-          詹亦钊
-
-        </div>
-
-
-        <div class="venue">
-
-          控制与决策,
-          32(5), 913–919, 2017.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:SeFeTyx0c_EC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           PREPRINTS / EARLY ACCESS
-           =================================================== -->
-
-      <h3>
-        Preprints / Early Access
-      </h3>
-
-
-
-      <!-- RepPHC -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:yD5IFk8b50cC"
-            target="_blank"
-          >
-
-            Parallel Hierarchical Clustering with
-            Dynamic Representativeness-Aware Affinities
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          <strong>J. Guan</strong>,
-
-          B. Jiang,
-
-          Z. Wang,
-
-          X. Li,
-
-          H. Bai,
-
-          S. Li,
-
-          and W. Sheng
-
-        </div>
-
-
-        <div class="venue">
-
-          Available at SSRN 7507391.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:yD5IFk8b50cC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- Dual Topology -->
-
-      <div class="publication">
-
-
-        <div class="pub-title">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:4OULZ7Gr8RgC"
-            target="_blank"
-          >
-
-            Dual-Topology Learning with Adaptive Anchors
-            for Multi-View Clustering
-
-          </a>
-
-        </div>
-
-
-        <div class="authors">
-
-          C. Zhang,
-
-          C. Zhang,
-
-          J. Zhang,
-
-          <strong>J. Guan</strong>,
-
-          X. Zhou,
-
-          B. Wang,
-
-          H. Li,
-
-          et al.
-
-        </div>
-
-
-        <div class="venue">
-
-          Publication information to be updated.
-
-        </div>
-
-
-        <div class="pub-links">
-
-          <a
-            href="https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:4OULZ7Gr8RgC"
-            target="_blank"
-          >
-            [Paper]
-          </a>
-
-        </div>
-
-
-      </div>
-
-
-
-      <!-- ===================================================
-           GOOGLE SCHOLAR
-           =================================================== -->
-
-      <div class="scholar-link">
-
-        <a
-          href="https://scholar.google.com/citations?user=Hexu0igAAAAJ&hl=en"
-          target="_blank"
-        >
-
-          View full publication list on Google Scholar →
-
-        </a>
-
-      </div>
-
+      <!-- publications.js 会自动把论文插入这里 -->
+      <div id="publication-list"></div>
 
     </section>
 
 
 
-    <!-- =====================================================
-         ACADEMIC SERVICE
-         ===================================================== -->
-
     <section id="service">
-
 
       <h2>
         Academic Service
       </h2>
-
 
       <p>
 
@@ -1914,7 +545,6 @@
         pattern recognition, data mining, and related areas.
 
       </p>
-
 
     </section>
 
@@ -1926,15 +556,20 @@
 
 
 
-<!-- =========================================================
-     FOOTER
-     ========================================================= -->
-
 <footer>
 
   © 2026 Junyi Guan · Hangzhou Normal University
 
 </footer>
+
+
+
+<!-- =========================================
+     Load dynamic content
+     ========================================= -->
+
+<script src="publications.js"></script>
+<script src="news.js"></script>
 
 
 </body>
