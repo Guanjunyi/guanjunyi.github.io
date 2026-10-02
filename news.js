@@ -1,94 +1,68 @@
-const news = [
-
-  {
-    year: 2026,
-
-    icon: "🎉",
-
-    text:
-      'Our paper "Hierarchical Superpixel Segmentation by Searching Seeds" has been accepted by IEEE Transactions on Image Processing (TIP).',
-
-    authors:
-      'Yuxuan Zhang, <strong>Junyi Guan*</strong>, Xiuli Ji, Yangyang Zhao, Xiongxiong He, and Sheng Li',
-
-    paper:
-      "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC",
-
-    code:
-      "https://github.com/Guanjunyi/HSSS"
-  },
-
-
-  {
-    year: 2026,
-
-    icon: "🎉",
-
-    text:
-      'Our paper "Peak-Padding: Clustering by Padding Density Peaks With the Minimum Padding Cost" has been published in IEEE Transactions on Neural Networks and Learning Systems (TNNLS).',
-
-    authors:
-      '<strong>Junyi Guan</strong>, Bingbing Jiang, Weiguo Sheng*, Yangyang Zhao, Sheng Li, and Xiongxiong He',
-
-    paper:
-      "https://doi.org/10.1109/TNNLS.2025.3606527",
-
-    code:
-      "https://github.com/Guanjunyi/PeakPading"
-  },
-
-
-  {
-    year: 2026,
-
-    icon: "🎉",
-
-    text:
-      'Our paper "Multi-view Feature Selection Method with Adaptive Projection Subspace Fusion" has been accepted by Pattern Recognition.',
-
-    authors:
-      'J. Liu, C. Zhang, T. Zhou, Y. Liu, R. Sheikhpour, Y. Wang, <strong>J. Guan</strong>, J. Chen, et al.',
-
-    paper:
-      "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u_35RYKgDlwC",
-
-    code:
-      ""
-  }
-
-];
-
+/* =========================================================
+   Automatically generate News from publications.js
+   ========================================================= */
 
 const newsContainer =
   document.getElementById("news-list");
 
 
-news.forEach(item => {
+const newsPublications = publications
+  .filter(pub => pub.news === true)
+  .sort((a, b) => b.year - a.year);
+
+
+newsPublications.forEach(pub => {
+
+  let actionText = "";
+
+  if (pub.status === "accepted") {
+
+    actionText =
+      `has been accepted by ${pub.journal}.`;
+
+  } else if (pub.status === "published") {
+
+    actionText =
+      `has been published in ${pub.journal}.`;
+
+  } else {
+
+    actionText =
+      `has been published in ${pub.journal}.`;
+
+  }
+
 
   let linksHTML = "";
 
-  if (item.paper) {
+
+  if (pub.paper) {
+
     linksHTML += `
       <a
-        href="${item.paper}"
+        href="${pub.paper}"
         target="_blank"
         rel="noopener noreferrer"
       >
         [Paper]
       </a>
     `;
+
   }
 
-  if (item.code) {
+
+  if (pub.code) {
+
     linksHTML += `
       <a
-        href="${item.code}"
+        href="${pub.code}"
         target="_blank"
         rel="noopener noreferrer"
       >
         [Code]
       </a>
     `;
+
   }
 
 
@@ -99,15 +73,15 @@ news.forEach(item => {
       <div>
 
         <span class="news-year">
-          ${item.year}
+          ${pub.year}
         </span>
 
         <span class="news-icon">
-          ${item.icon}
+          🎉
         </span>
 
         <span class="news-text">
-          ${item.text}
+          Our paper "${pub.title}" ${actionText}
         </span>
 
         <span class="news-links">
@@ -117,7 +91,7 @@ news.forEach(item => {
       </div>
 
       <div class="news-authors">
-        ${item.authors}
+        ${pub.authors}
       </div>
 
     </div>
