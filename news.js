@@ -1,7 +1,3 @@
-/* =========================================================
-   Junyi Guan - News
-   ========================================================= */
-
 const news = [
 
   {
@@ -10,7 +6,10 @@ const news = [
     icon: "🎉",
 
     text:
-      'Our paper "Hierarchical Superpixel Segmentation by Searching Seeds", led by Yuxuan Zhang, has been accepted by IEEE Transactions on Image Processing (TIP).',
+      'Our paper "Hierarchical Superpixel Segmentation by Searching Seeds" has been accepted by IEEE Transactions on Image Processing (TIP).',
+
+    authors:
+      'Yuxuan Zhang, <strong>Junyi Guan*</strong>, Xiuli Ji, Yangyang Zhao, Xiongxiong He, and Sheng Li',
 
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC",
@@ -22,10 +21,6 @@ const news = [
 ];
 
 
-/* =========================================================
-   Automatically render news
-   ========================================================= */
-
 const newsContainer =
   document.getElementById("news-list");
 
@@ -34,11 +29,8 @@ news.forEach(item => {
 
   let linksHTML = "";
 
-
   if (item.paper) {
-
     linksHTML += `
-
       <a
         href="${item.paper}"
         target="_blank"
@@ -46,16 +38,11 @@ news.forEach(item => {
       >
         [Paper]
       </a>
-
     `;
-
   }
 
-
   if (item.code) {
-
     linksHTML += `
-
       <a
         href="${item.code}"
         target="_blank"
@@ -63,9 +50,7 @@ news.forEach(item => {
       >
         [Code]
       </a>
-
     `;
-
   }
 
 
@@ -73,21 +58,29 @@ news.forEach(item => {
 
     <div class="news-item">
 
-      <span class="news-year">
-        ${item.year}
-      </span>
+      <div>
 
-      <span class="news-icon">
-        ${item.icon}
-      </span>
+        <span class="news-year">
+          ${item.year}
+        </span>
 
-      <span class="news-text">
-        ${item.text}
-      </span>
+        <span class="news-icon">
+          ${item.icon}
+        </span>
 
-      <span class="news-links">
-        ${linksHTML}
-      </span>
+        <span class="news-text">
+          ${item.text}
+        </span>
+
+        <span class="news-links">
+          ${linksHTML}
+        </span>
+
+      </div>
+
+      <div class="news-authors">
+        ${item.authors}
+      </div>
 
     </div>
 
