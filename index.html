@@ -15,6 +15,10 @@
 
   <style>
 
+    /* =========================================================
+       GLOBAL
+       ========================================================= */
+
     :root {
       --text: #252525;
       --muted: #666666;
@@ -47,7 +51,7 @@
         sans-serif;
 
       font-size: 16px;
-      line-height: 1.68;
+      line-height: 1.7;
     }
 
     a {
@@ -59,11 +63,18 @@
       text-decoration: underline;
     }
 
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
     header {
       position: sticky;
       top: 0;
       z-index: 100;
+
       background: rgba(255,255,255,0.96);
+
       border-bottom: 1px solid var(--border);
     }
 
@@ -80,19 +91,24 @@
     .nav-name {
       font-size: 21px;
       font-weight: 700;
-      color: #222222;
+      color: #222;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 27px;
+      gap: 26px;
     }
 
     .nav-links a {
-      color: #333333;
+      color: #333;
       font-size: 15px;
     }
+
+
+    /* =========================================================
+       MAIN LAYOUT
+       ========================================================= */
 
     .container {
       max-width: 1140px;
@@ -104,20 +120,29 @@
       gap: 62px;
     }
 
+
+    /* =========================================================
+       SIDEBAR
+       ========================================================= */
+
     .sidebar {
-      align-self: start;
       position: sticky;
       top: 95px;
+      align-self: start;
     }
 
     .avatar {
       width: 190px;
       height: 190px;
+
       border-radius: 50%;
+
       object-fit: cover;
       object-position: 50% 38%;
+
       display: block;
       margin-bottom: 22px;
+
       border: 1px solid #eeeeee;
     }
 
@@ -125,13 +150,14 @@
       font-size: 30px;
       line-height: 1.2;
       font-weight: 700;
-      margin: 0 0 10px 0;
+
+      margin-bottom: 10px;
     }
 
     .position {
       font-size: 16px;
       color: #505050;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .institution {
@@ -142,17 +168,22 @@
 
     .contact {
       font-size: 15px;
-      color: #444444;
+      color: #444;
     }
 
     .contact div {
       margin-bottom: 8px;
     }
 
-    .contact-label {
+    .contact-icon {
       display: inline-block;
-      min-width: 21px;
+      width: 24px;
     }
+
+
+    /* =========================================================
+       MAIN CONTENT
+       ========================================================= */
 
     main {
       min-width: 0;
@@ -165,9 +196,12 @@
     h2 {
       font-size: 25px;
       font-weight: 600;
-      margin-top: 42px;
+
+      margin-top: 43px;
       margin-bottom: 17px;
+
       padding-bottom: 7px;
+
       border-bottom: 1px solid var(--border);
     }
 
@@ -178,9 +212,11 @@
     h3 {
       font-size: 20px;
       font-weight: 600;
-      margin-top: 34px;
-      margin-bottom: 18px;
-      color: #333333;
+
+      margin-top: 33px;
+      margin-bottom: 17px;
+
+      color: #333;
     }
 
     p {
@@ -188,41 +224,89 @@
       margin-bottom: 14px;
     }
 
+
+    /* =========================================================
+       RESEARCH INTERESTS
+       ========================================================= */
+
     .tag {
       display: inline-block;
-      margin: 4px 5px 4px 0;
+
       padding: 5px 11px;
-      background: var(--tag-background);
+      margin: 4px 5px 4px 0;
+
       border-radius: 16px;
+
+      background: var(--tag-background);
+
+      color: #444;
       font-size: 14px;
-      color: #444444;
     }
 
+
+    /* =========================================================
+       NEWS
+       ========================================================= */
+
     .news-item {
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
 
     .news-year {
       display: inline-block;
       min-width: 58px;
+
       font-weight: 600;
-      color: #555555;
+      color: #555;
     }
 
+
+    /* =========================================================
+       PROJECTS
+       ========================================================= */
+
+    .project-item {
+      margin-bottom: 21px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      color: #222;
+      line-height: 1.55;
+    }
+
+    .project-info {
+      margin-top: 3px;
+
+      color: #666;
+      font-style: italic;
+    }
+
+    .project-description {
+      margin-top: 3px;
+      color: #555;
+    }
+
+
+    /* =========================================================
+       PUBLICATIONS
+       ========================================================= */
+
     .publication {
-      margin-bottom: 26px;
-      padding-bottom: 2px;
+      margin-bottom: 25px;
     }
 
     .pub-title {
-      margin-bottom: 2px;
       font-size: 16.5px;
       line-height: 1.55;
+
       font-weight: 600;
+
+      margin-bottom: 2px;
     }
 
     .pub-title a {
-      color: #222222;
+      color: #222;
     }
 
     .pub-title a:hover {
@@ -230,13 +314,14 @@
     }
 
     .authors {
-      color: #333333;
+      color: #333;
       line-height: 1.55;
     }
 
     .venue {
       margin-top: 2px;
-      color: #555555;
+
+      color: #555;
       font-style: italic;
     }
 
@@ -245,31 +330,72 @@
     }
 
     .pub-links a {
-      margin-right: 11px;
+      margin-right: 10px;
+
       font-size: 14px;
       font-weight: 600;
     }
 
     .publication-note {
-      color: #777777;
       font-size: 14px;
+      color: #777;
+
       margin-bottom: 24px;
     }
 
+
+    /* =========================================================
+       SERVICE
+       ========================================================= */
+
+    .service-block {
+      margin-bottom: 20px;
+    }
+
+    .service-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .service-list {
+      margin-top: 6px;
+      padding-left: 20px;
+    }
+
+    .service-list li {
+      margin-bottom: 5px;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
     footer {
       max-width: 1140px;
+
       margin: 55px auto 0;
+
       padding: 25px 28px 35px;
+
       border-top: 1px solid var(--border);
-      color: #888888;
+
+      color: #888;
       font-size: 14px;
     }
 
-    @media (max-width: 800px) {
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 850px) {
 
       .container {
         grid-template-columns: 1fr;
+
         gap: 28px;
+
         margin-top: 30px;
       }
 
@@ -293,8 +419,13 @@
 </head>
 
 
+
 <body>
 
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
 
 <header>
 
@@ -303,6 +434,7 @@
     <div class="nav-name">
       Junyi Guan
     </div>
+
 
     <div class="nav-links">
 
@@ -316,6 +448,10 @@
 
       <a href="#news">
         News
+      </a>
+
+      <a href="#projects">
+        Projects
       </a>
 
       <a href="#publications">
@@ -334,8 +470,16 @@
 
 
 
+<!-- =========================================================
+     MAIN
+     ========================================================= -->
+
 <div class="container">
 
+
+  <!-- =======================================================
+       SIDEBAR
+       ======================================================= -->
 
   <aside class="sidebar">
 
@@ -373,7 +517,7 @@
 
       <div>
 
-        <span class="contact-label">
+        <span class="contact-icon">
           📍
         </span>
 
@@ -384,7 +528,20 @@
 
       <div>
 
-        <span class="contact-label">
+        <span class="contact-icon">
+          ✉️
+        </span>
+
+        <a href="mailto:guanjy@hznu.edu.cn">
+          Email:guanjy(at)hznu(dot)edu(dot)cn
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <span class="contact-icon">
           🎓
         </span>
 
@@ -400,7 +557,7 @@
 
       <div>
 
-        <span class="contact-label">
+        <span class="contact-icon">
           💻
         </span>
 
@@ -421,102 +578,184 @@
 
 
 
+  <!-- =======================================================
+       MAIN CONTENT
+       ======================================================= -->
+
   <main>
 
 
 
+    <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+
     <section id="about">
+
 
       <h2>
         About Me
       </h2>
 
-      <p>
-
-        I am an Associate Researcher at the School of Information
-        Science and Technology, Hangzhou Normal University.
-
-      </p>
 
       <p>
 
-        My research interests include data mining, unsupervised learning,
-        clustering, pattern recognition, and superpixel segmentation.
-        In particular, I am interested in density-based clustering,
-        multi-peak clustering, graph-based clustering,
-        hierarchical clustering, and structure-aware learning
-        for complex data distributions.
+        I am an Associate Researcher at the School of Information Science
+        and Technology, Hangzhou Normal University.
 
       </p>
+
+
+      <p>
+
+        My research focuses on data mining, machine learning,
+        pattern recognition, and clustering analysis.
+        I have published more than ten SCI-indexed papers as first
+        or corresponding author in leading journals including
+        IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI),
+        IEEE Transactions on Image Processing (TIP),
+        IEEE Transactions on Knowledge and Data Engineering (TKDE),
+        IEEE Transactions on Neural Networks and Learning Systems (TNNLS),
+        Pattern Recognition,
+        Information Sciences,
+        and Neurocomputing.
+
+      </p>
+
+
+      <p>
+
+        I am currently the principal investigator of an
+        National Natural Science Foundation of China (NSFC) General Program
+        and an NSFC Young Scientists Fund project.
+        I have also participated in an NSFC Key Program
+        and other national and provincial research projects.
+
+      </p>
+
 
     </section>
 
 
 
+    <!-- =====================================================
+         RESEARCH
+         ===================================================== -->
+
     <section id="research">
+
 
       <h2>
         Research Interests
       </h2>
 
+
       <span class="tag">
         Clustering
       </span>
+
 
       <span class="tag">
         Unsupervised Learning
       </span>
 
-      <span class="tag">
-        Data Mining
-      </span>
 
       <span class="tag">
         Pattern Recognition
       </span>
 
+
+      <span class="tag">
+        Data Mining
+      </span>
+
+
       <span class="tag">
         Density-Based Clustering
       </span>
+
 
       <span class="tag">
         Multi-Peak Clustering
       </span>
 
+
       <span class="tag">
         Graph-Based Clustering
       </span>
+
 
       <span class="tag">
         Hierarchical Clustering
       </span>
 
+
       <span class="tag">
         Superpixel Segmentation
       </span>
+
 
     </section>
 
 
 
+    <!-- =====================================================
+         NEWS
+         ===================================================== -->
+
     <section id="news">
+
 
       <h2>
         News
       </h2>
 
-      <!-- news.js 会自动把内容插入这里 -->
+
+      <!--
+        news.js 会自动生成内容
+      -->
+
       <div id="news-list"></div>
+
 
     </section>
 
 
 
+    <!-- =====================================================
+         PROJECTS
+         ===================================================== -->
+
+    <section id="projects">
+
+
+      <h2>
+        Research Projects & Grants
+      </h2>
+
+
+      <!--
+        projects.js 会自动生成内容
+      -->
+
+      <div id="project-list"></div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PUBLICATIONS
+         ===================================================== -->
+
     <section id="publications">
+
 
       <h2>
         Publications
       </h2>
+
 
       <div class="publication-note">
 
@@ -526,25 +765,81 @@
 
       </div>
 
-      <!-- publications.js 会自动把论文插入这里 -->
+
+      <!--
+        publications.js 会自动生成全部论文
+      -->
+
       <div id="publication-list"></div>
+
+
+      <p style="margin-top: 35px;">
+
+        <a
+          href="https://scholar.google.com/citations?user=Hexu0igAAAAJ&hl=en"
+          target="_blank"
+        >
+          View full publication list on Google Scholar →
+        </a>
+
+      </p>
+
 
     </section>
 
 
 
+    <!-- =====================================================
+         ACADEMIC SERVICE
+         ===================================================== -->
+
     <section id="service">
+
 
       <h2>
         Academic Service
       </h2>
 
-      <p>
 
-        Reviewer for journals and conferences in machine learning,
-        pattern recognition, data mining, and related areas.
+      <div class="service-block">
 
-      </p>
+
+        <div class="service-title">
+          Reviewer
+        </div>
+
+
+        <ul class="service-list">
+
+          <li>
+            IEEE Transactions on Knowledge and Data Engineering (TKDE)
+          </li>
+
+          <li>
+            Pattern Recognition
+          </li>
+
+          <li>
+            Knowledge-Based Systems
+          </li>
+
+          <li>
+            Information Sciences
+          </li>
+
+          <li>
+            Neurocomputing
+          </li>
+
+          <li>
+            International Conference on Machine Learning (ICML)
+          </li>
+
+        </ul>
+
+
+      </div>
+
 
     </section>
 
@@ -556,6 +851,10 @@
 
 
 
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
 <footer>
 
   © 2026 Junyi Guan · Hangzhou Normal University
@@ -564,12 +863,15 @@
 
 
 
-<!-- =========================================
-     Load dynamic content
-     ========================================= -->
+<!-- =========================================================
+     JAVASCRIPT FILES
+     ========================================================= -->
+
+<script src="news.js"></script>
+
+<script src="projects.js"></script>
 
 <script src="publications.js"></script>
-<script src="news.js"></script>
 
 
 </body>
