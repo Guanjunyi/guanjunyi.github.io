@@ -6,12 +6,19 @@
    - Add a new paper by inserting one object into `publications`.
    - `paper` = paper / DOI / Scholar URL
    - `code`  = GitHub repository URL
-   - Use <strong>JA Novel Clusteunyi Guan</strong> to highlight your name
+   - Use <strong>Junyi Guan</strong> to highlight your name
    - Add * after corresponding author
+
+   News:
+   - `news: true`  -> show this paper in News
+   - `news: false` -> do not show this paper in News
+   - `status: "accepted"`  -> has been accepted by ...
+   - `status: "published"` -> has been published in ...
    ========================================================= */
 
 
 const publications = [
+
 
   /* =======================================================
      2026
@@ -29,11 +36,19 @@ const publications = [
     venue:
       "IEEE Transactions on Image Processing (TIP), vol. 35, pp. 9773–9788, 2026",
 
+    journal:
+      "IEEE Transactions on Image Processing (TIP)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:cFHS6HbyZ2cC",
 
     code:
-      "https://github.com/Guanjunyi/HSSS"
+      "https://github.com/Guanjunyi/HSSS",
+
+    news: true,
+
+    status:
+      "accepted"
   },
 
 
@@ -49,11 +64,19 @@ const publications = [
     venue:
       "IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2026",
 
+    journal:
+      "IEEE Transactions on Neural Networks and Learning Systems (TNNLS)",
+
     paper:
       "https://doi.org/10.1109/TNNLS.2025.3606527",
 
     code:
-      "https://github.com/Guanjunyi/PeakPading"
+      "https://github.com/Guanjunyi/PeakPading",
+
+    news: true,
+
+    status:
+      "published"
   },
 
 
@@ -69,11 +92,19 @@ const publications = [
     venue:
       "Pattern Recognition, 114467, 2026",
 
+    journal:
+      "Pattern Recognition",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u_35RYKgDlwC",
 
     code:
-      ""
+      "",
+
+    news: true,
+
+    status:
+      "accepted"
   },
 
 
@@ -93,11 +124,16 @@ const publications = [
     venue:
       "IEEE Transactions on Knowledge and Data Engineering (TKDE), vol. 37, no. 1, pp. 542–556, 2025",
 
+    journal:
+      "IEEE Transactions on Knowledge and Data Engineering (TKDE)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:iH-uZ7U-co4C",
 
     code:
-      "https://github.com/Guanjunyi/Y-graph"
+      "https://github.com/Guanjunyi/Y-graph",
+
+    news: false
   },
 
 
@@ -113,11 +149,16 @@ const publications = [
     venue:
       "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), vol. 39, no. 17, pp. 17617–17625, 2025",
 
+    journal:
+      "AAAI Conference on Artificial Intelligence (AAAI)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:YFjsv_pBGBYC",
 
     code:
-      ""
+      "",
+
+    news: false
   },
 
 
@@ -133,11 +174,16 @@ const publications = [
     venue:
       "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), vol. 39, no. 20, pp. 21411–21419, 2025",
 
+    journal:
+      "AAAI Conference on Artificial Intelligence (AAAI)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:BqipwSGYUEgC",
 
     code:
-      ""
+      "",
+
+    news: false
   },
 
 
@@ -153,11 +199,16 @@ const publications = [
     venue:
       "Neurocomputing, 131421, 2025",
 
+    journal:
+      "Neurocomputing",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:J_g5lzvAfSwC",
 
     code:
-      ""
+      "",
+
+    news: false
   },
 
 
@@ -177,11 +228,16 @@ const publications = [
     venue:
       "Pattern Recognition, vol. 152, 110458, 2024",
 
+    journal:
+      "Pattern Recognition",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:hFOr9nPyWt4C",
 
     code:
-      "https://github.com/Guanjunyi/R-MDPC"
+      "https://github.com/Guanjunyi/R-MDPC",
+
+    news: false
   },
 
 
@@ -201,11 +257,16 @@ const publications = [
     venue:
       "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), vol. 45, no. 5, pp. 6307–6319, 2023",
 
+    journal:
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UeHWp8X0CEIC",
 
     code:
-      "https://github.com/Guanjunyi/SMMP-A-Stable-Membership-based-Auto-tuning-Multi-Peak-Clustering-Algorithm"
+      "https://github.com/Guanjunyi/SMMP-A-Stable-Membership-based-Auto-tuning-Multi-Peak-Clustering-Algorithm",
+
+    news: false
   },
 
 
@@ -221,11 +282,16 @@ const publications = [
     venue:
       "IEEE Transactions on Knowledge and Data Engineering (TKDE), vol. 35, no. 10, pp. 10814–10830, 2023",
 
+    journal:
+      "IEEE Transactions on Knowledge and Data Engineering (TKDE)",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:MXK_kJrjxJIC",
 
     code:
-      "https://github.com/Guanjunyi/DEMOS"
+      "https://github.com/Guanjunyi/DEMOS",
+
+    news: false
   },
 
 
@@ -241,11 +307,16 @@ const publications = [
     venue:
       "Information Sciences, vol. 628, pp. 504–521, 2023",
 
+    journal:
+      "Information Sciences",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:UebtZRa9Y70C",
 
     code:
-      "https://github.com/Guanjunyi/MDPCplus"
+      "https://github.com/Guanjunyi/MDPCplus",
+
+    news: false
   },
 
 
@@ -265,11 +336,16 @@ const publications = [
     venue:
       "Neurocomputing, vol. 455, pp. 401–418, 2021",
 
+    journal:
+      "Neurocomputing",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u5HHmVD_uO8C",
 
     code:
-      "https://github.com/Guanjunyi/FHC-LDP-a-variant-of-density-peak-clustering-DPC"
+      "https://github.com/Guanjunyi/FHC-LDP-a-variant-of-density-peak-clustering-DPC",
+
+    news: false
   },
 
 
@@ -285,11 +361,16 @@ const publications = [
     venue:
       "IEEE Signal Processing Letters, vol. 28, pp. 897–901, 2021",
 
+    journal:
+      "IEEE Signal Processing Letters",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u-x6o8ySG0sC",
 
     code:
-      "https://github.com/Guanjunyi/PGDPCforImageSegementation"
+      "https://github.com/Guanjunyi/PGDPCforImageSegementation",
+
+    news: false
   },
 
 
@@ -305,14 +386,17 @@ const publications = [
     venue:
       "Pattern Analysis and Applications, vol. 24, no. 3, pp. 1231–1248, 2021",
 
+    journal:
+      "Pattern Analysis and Applications",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:r0BpntZqJG4C",
 
     code:
-      "https://github.com/Guanjunyi/NM-DPC"
+      "https://github.com/Guanjunyi/NM-DPC",
+
+    news: false
   },
-
-
 
 
   /* =======================================================
@@ -320,7 +404,8 @@ const publications = [
      ======================================================= */
 
   {
-    year: "Preprints / Early Access",
+    year:
+      "Preprints / Early Access",
 
     title:
       "Parallel Hierarchical Clustering with Dynamic Representativeness-Aware Affinities",
@@ -331,16 +416,22 @@ const publications = [
     venue:
       "Available at SSRN 7507391",
 
+    journal:
+      "",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:yD5IFk8b50cC",
 
     code:
-      ""
+      "",
+
+    news: false
   },
 
 
   {
-    year: "Preprints / Early Access",
+    year:
+      "Preprints / Early Access",
 
     title:
       "Dual-Topology Learning with Adaptive Anchors for Multi-View Clustering",
@@ -351,11 +442,16 @@ const publications = [
     venue:
       "Publication information to be updated",
 
+    journal:
+      "",
+
     paper:
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:4OULZ7Gr8RgC",
 
     code:
-      ""
+      "",
+
+    news: false
   }
 
 ];
@@ -407,13 +503,11 @@ regularPublications.forEach(pub => {
 });
 
 
-
 /* =========================================================
    Render one publication
    ========================================================= */
 
 function renderPublication(pub) {
-
 
   let titleHTML = pub.title;
 
@@ -433,7 +527,6 @@ function renderPublication(pub) {
     `;
 
   }
-
 
 
   let linksHTML = "";
@@ -471,7 +564,6 @@ function renderPublication(pub) {
     `;
 
   }
-
 
 
   return `
@@ -512,7 +604,6 @@ function renderPublication(pub) {
 }
 
 
-
 /* =========================================================
    Render published papers
    ========================================================= */
@@ -542,7 +633,6 @@ Object.keys(groupedPublications)
 
 
   });
-
 
 
 /* =========================================================
