@@ -1,12 +1,349 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Junyi Guan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junyi Guan | Academic Homepage</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    a {
+      color: #2a5db0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e5e5;
+      background: #fff;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      margin-left: 24px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 45px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 55px;
+    }
+
+    .sidebar {
+      align-self: start;
+    }
+
+    .avatar {
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin: 0 0 6px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 38px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .position {
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .institution {
+      color: #777;
+      margin-bottom: 18px;
+    }
+
+    .contact div {
+      margin: 7px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 4px 5px 4px 0;
+      background: #f5f5f5;
+      border-radius: 16px;
+      font-size: 14px;
+    }
+
+    .news-item {
+      margin-bottom: 8px;
+    }
+
+    .year {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
+    .publication {
+      margin-bottom: 20px;
+    }
+
+    .pub-title {
+      font-weight: bold;
+    }
+
+    .venue {
+      font-style: italic;
+      color: #555;
+    }
+
+    footer {
+      max-width: 1100px;
+      margin: 50px auto 0;
+      padding: 24px;
+      border-top: 1px solid #e5e5e5;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Junyi Guan</h1>
-  <p>Associate Researcher, Hangzhou Normal University</p>
-  <p>Welcome to my academic homepage.</p>
+
+<header>
+  <div class="nav">
+    <div class="name">Junyi Guan</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#service">Service</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <aside class="sidebar">
+
+    <div class="avatar">JG</div>
+
+    <h1>Junyi Guan</h1>
+
+    <div class="position">
+      Associate Researcher
+    </div>
+
+    <div class="institution">
+      Hangzhou Normal University
+    </div>
+
+    <div class="contact">
+
+      <div>
+        <a href="https://scholar.google.com/citations?user=Hexu0igAAAAJ&hl=en"
+           target="_blank">
+          Google Scholar
+        </a>
+      </div>
+
+      <div>
+        <a href="https://github.com/Guanjunyi"
+           target="_blank">
+          GitHub
+        </a>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <main>
+
+    <section id="about">
+
+      <h2>About Me</h2>
+
+      <p>
+        I am an Associate Researcher at the School of Information Science and Technology,
+        Hangzhou Normal University.
+      </p>
+
+      <p>
+        My research interests include data mining, unsupervised learning,
+        clustering, pattern recognition, and superpixel segmentation.
+        I am particularly interested in density-based clustering,
+        multi-peak clustering, graph-based clustering,
+        and hierarchical clustering for complex data distributions.
+      </p>
+
+    </section>
+
+
+    <section id="research">
+
+      <h2>Research Interests</h2>
+
+      <span class="tag">Clustering</span>
+      <span class="tag">Unsupervised Learning</span>
+      <span class="tag">Data Mining</span>
+      <span class="tag">Pattern Recognition</span>
+      <span class="tag">Density Peaks</span>
+      <span class="tag">Multi-Peak Clustering</span>
+      <span class="tag">Graph-Based Clustering</span>
+      <span class="tag">Superpixel Segmentation</span>
+
+    </section>
+
+
+    <section id="news">
+
+      <h2>News</h2>
+
+      <div class="news-item">
+        <span class="year">2026</span>
+        Welcome to my academic homepage.
+      </div>
+
+      <div class="news-item">
+        <span class="year">2026</span>
+        More research updates will be added soon.
+      </div>
+
+    </section>
+
+
+    <section id="publications">
+
+      <h2>Selected Publications</h2>
+
+      <div class="publication">
+
+        <div class="pub-title">
+          SMMP: A Stable-Membership-Based Auto-Tuning Multi-Peak Clustering Algorithm
+        </div>
+
+        <div>
+          Junyi Guan, Sheng Li, Xiongxiong He,
+          Jinhui Zhu, Jiajia Chen, and Peng Si
+        </div>
+
+        <div class="venue">
+          IEEE Transactions on Pattern Analysis and Machine Intelligence, 2023
+        </div>
+
+      </div>
+
+
+      <div class="publication">
+
+        <div class="pub-title">
+          DEMOS: Clustering by Pruning a Density-Boosting Cluster Tree of Density Mounts
+        </div>
+
+        <div>
+          Junyi Guan, Sheng Li, Xiaojun Chen,
+          Xiongxiong He, and Jiajia Chen
+        </div>
+
+        <div class="venue">
+          IEEE Transactions on Knowledge and Data Engineering, 2023
+        </div>
+
+      </div>
+
+
+      <div class="publication">
+
+        <div class="pub-title">
+          Fast Main Density Peak Clustering Within Relevant Regions via a Robust Decision Graph
+        </div>
+
+        <div>
+          Junyi Guan et al.
+        </div>
+
+        <div class="venue">
+          Pattern Recognition, 2024
+        </div>
+
+      </div>
+
+
+      <p>
+        <a href="https://scholar.google.com/citations?user=Hexu0igAAAAJ&hl=en"
+           target="_blank">
+          View full publication list on Google Scholar →
+        </a>
+      </p>
+
+    </section>
+
+
+    <section id="service">
+
+      <h2>Academic Service</h2>
+
+      <p>
+        Reviewer for journals and conferences in machine learning,
+        pattern recognition, and data mining.
+      </p>
+
+    </section>
+
+  </main>
+
+</div>
+
+
+<footer>
+  © 2026 Junyi Guan · Hosted on GitHub Pages
+</footer>
+
 </body>
 </html>
