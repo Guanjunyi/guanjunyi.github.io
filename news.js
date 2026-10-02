@@ -16,6 +16,44 @@ const news = [
 
     code:
       "https://github.com/Guanjunyi/HSSS"
+  },
+
+
+  {
+    year: 2026,
+
+    icon: "🎉",
+
+    text:
+      'Our paper "Peak-Padding: Clustering by Padding Density Peaks With the Minimum Padding Cost" has been published in IEEE Transactions on Neural Networks and Learning Systems (TNNLS).',
+
+    authors:
+      '<strong>Junyi Guan</strong>, Bingbing Jiang, Weiguo Sheng*, Yangyang Zhao, Sheng Li, and Xiongxiong He',
+
+    paper:
+      "https://doi.org/10.1109/TNNLS.2025.3606527",
+
+    code:
+      "https://github.com/Guanjunyi/PeakPading"
+  },
+
+
+  {
+    year: 2026,
+
+    icon: "🎉",
+
+    text:
+      'Our paper "Multi-view Feature Selection Method with Adaptive Projection Subspace Fusion" has been accepted by Pattern Recognition.',
+
+    authors:
+      'J. Liu, C. Zhang, T. Zhou, Y. Liu, R. Sheikhpour, Y. Wang, <strong>J. Guan</strong>, J. Chen, et al.',
+
+    paper:
+      "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:u_35RYKgDlwC",
+
+    code:
+      ""
   }
 
 ];
