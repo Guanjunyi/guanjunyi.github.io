@@ -6,7 +6,7 @@
    - Add a new paper by inserting one object into `publications`.
    - `paper` = paper / DOI / Scholar URL
    - `code`  = GitHub repository URL
-   - Use <strong>Junyi Guan</strong> to highlight your name
+   - Use <strong>JA Novel Clusteunyi Guan</strong> to highlight your name
    - Add * after corresponding author
    ========================================================= */
 
@@ -309,7 +309,7 @@ const publications = [
       "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=Hexu0igAAAAJ&citation_for_view=Hexu0igAAAAJ:r0BpntZqJG4C",
 
     code:
-      ""
+      "https://github.com/Guanjunyi/NM-DPC"
   },
 
 
